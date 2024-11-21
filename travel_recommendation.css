@@ -1,0 +1,65 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./assets/background-img2.jpeg'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire body */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; 
+}
+.navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #1e272e; /* Dark background */
+            color: white;
+}
+.navbar-logo {
+            display: flex;
+            align-items: center;
+}
+.navbar-logo img {
+            width: 30px;
+            margin-right: 10px;
+}
+.navbar-links {
+            display: flex;
+            gap: 20px;
+}
+.navbar-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+}
+.navbar-links a:hover {
+            text-decoration: underline;
+}
+.search-bar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+}
+.search-bar input {
+            border: none;
+            padding: 5px 10px;
+            font-size: 14px;
+            outline: none;
+}
+.search-bar .search-icon img {
+    width: 16px;
+    height: 16px;
+}
+.search-bar button {
+            border: none;
+            padding: 5px 10px;
+            background-color: #45a049;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+}
+.search-bar button:hover {
+            background-color: #1e272e; /* Add a hover effect */
+}
