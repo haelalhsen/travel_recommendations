@@ -230,23 +230,50 @@ body {
 }
 
 /* for contact us section*/
+.contact-us-container{
+    display:flex;
+    align-items: center;
+    padding: 10%;
+}
+.contact-us-title{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
 #contactForm {
     max-width: 400px;
     margin: 0 auto;
+  }
+#contactForm label{
+    color: white;
+    margin: 6px;
   }
   #contactForm input,
   #contactForm textarea {
     width: 100%;
     margin-bottom: 15px;
     padding: 8px;
+    background-color: transparent;
+    border: 2px solid white;
   }
   #contactForm button {
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 15px 30px;
+    background-color: #2e7971;
     color: white;
     border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: 10px;
+    width: 400px;
+    align-self: center;
   }
   #contactForm button:hover {
-    background-color: #0056b3;
+    background-color: #0c243e;
   }
