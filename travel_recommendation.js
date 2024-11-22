@@ -3,6 +3,7 @@ const btnClear = document.getElementById('btnclear');
 
 btnClear.addEventListener("click",()=>{
     document.getElementById('keyword').value="";
+    document.getElementById('result').innerHTML = '';
 })
 btnSearch.addEventListener("click",()=>{
     const input = document.getElementById('keyword').value.toLowerCase();
@@ -38,7 +39,6 @@ btnSearch.addEventListener("click",()=>{
         }
 
         if (recomedations.length >0) {
-            alert('ohhhhhh');
             recomedations.forEach(element=>{
                 resultDiv.appendChild(createCityCard(
                     element.name,
@@ -48,7 +48,6 @@ btnSearch.addEventListener("click",()=>{
             });
         } else {
           resultDiv.innerHTML = '';
-          console.log("hiiiii iam here");
         }
       })
       .catch(error => {
